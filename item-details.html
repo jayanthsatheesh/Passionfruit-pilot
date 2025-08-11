@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - PassionFruit</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+</head>
+<body>
+    <nav class="nav" aria-label="Main navigation">
+        <a href="index.html#hero" class="nav__logo">PassionFruit</a>
+        <div class="nav__links">
+            <a href="about.html" class="nav__link nav__link--bold">OUR STORY</a>
+        </div>
+        <div class="profile">
+            <a href="#" id="profile-icon-link" class="profile__icon-link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0118 21h-2.25a8.966 8.966 0 01-5.982-2.975m11.963 0A8.966 8.966 0 0012 21a8.966 8.966 0 00-5.982-2.975M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+            </a>
+            <div id="profile-dropdown" class="profile__dropdown hidden"></div>
+        </div>
+    </nav>
+
+    <main class="pdp-page">
+        <div class="pdp-main-section">
+            <div class="pdp-left-column">
+                <div class="main-image-container">
+                    <img src="https://www.sony.co.in/image/8c1b9705f4588e23f663007545939023?fmt=pjpeg&wid=330&bgcolor=FFFFFF&bgc=FFFFFF" alt="Sony Alpha a7 III Camera Body" id="main-product-image">
+                    <div class="trust-badge">✓ Certified Ready</div>
+                </div>
+                <div class="thumbnail-gallery">
+                    <img src="https://via.placeholder.com/100x80/eeeeee/333333?text=Angle+1" alt="Thumbnail 1" class="thumbnail active">
+                    <img src="https://via.placeholder.com/100x80/eeeeee/333333?text=Angle+2" alt="Thumbnail 2" class="thumbnail">
+                    <img src="https://via.placeholder.com/100x80/eeeeee/333333?text=Close-up" alt="Thumbnail 3" class="thumbnail">
+                    <img src="https://via.placeholder.com/100x80/eeeeee/333333?text=Lifestyle" alt="Thumbnail 4" class="thumbnail">
+                </div>
+            </div>
+            <div class="pdp-right-column">
+                <h1 id="product-title">Sony Alpha a7 III Camera Body</h1>
+                <div class="use-case-tags">
+                    <span>Perfect for:</span>
+                    <span class="tag">Vlogging</span>
+                    <span class="tag">Portrait Photography</span>
+                    <span class="tag">Travel</span>
+                </div>
+
+                <div class="pricing-section" role="region" aria-labelledby="pricing-heading">
+                    <h2 id="pricing-heading">Choose Your Rental Plan</h2>
+                    <div class="plan-options">
+                        <button class="plan-btn" data-plan="weekend" data-price="1500">Weekend Try</button>
+                        <button class="plan-btn" data-plan="weekly" data-price="2800">Try for a Week</button>
+                        <button class="plan-btn active" data-plan="monthly" data-price="5500">
+                            <span class="best-value-tag">Best Value</span>
+                            Monthly Try
+                        </button>
+                    </div>
+                </div>
+
+                <div class="availability-section">
+                    <label for="availability-date">Check Availability for:</label>
+                    <input type="date" id="availability-date" value="2025-08-15">
+                </div>
+
+                <button id="rent-now-flow-btn" class="btn rent-now-btn">Rent Now for ₹5,500</button>
+
+                <div class="pdp-trust-bar">
+                    <span>✓ Certified Ready Guarantee</span>
+                    <span>✓ On-Time Delivery</span>
+                    <span>✓ Transparent Pricing</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="pdp-details-section">
+            <div class="tabs-container">
+                <div class="tab-nav" role="tablist" aria-label="Product details">
+                    <button class="tab-link active" role="tab" aria-selected="true" aria-controls="tab-1">What's Included</button>
+                    <button class="tab-link" data-tab="tab-2">Full Specs</button>
+                    <button class="tab-link" data-tab="tab-3">Our Guarantee</button>
+                </div>
+                <div id="tab-1" class="tab-content active" role="tabpanel" tabindex="0" aria-labelledby="tab-link-1">
+                    <p>We believe in transparency, so you know exactly what to expect. This kit includes:</p>
+                    <ul>
+                        <li>Sony a7 III Camera Body</li>
+                        <li>2x Rechargeable Batteries</li>
+                        <li>Wall Charger & Cable</li>
+                        <li>64GB High-Speed SD Card</li>
+                        <li>Padded Camera Strap</li>
+                        <li>Protective Travel Case</li>
+                    </ul>
+                </div>
+                <div id="tab-2" class="tab-content">
+                    <table>
+                        <tr><th>Megapixels</th><td>24.2 MP</td></tr>
+                        <tr><th>Sensor Size</th><td>Full-Frame</td></tr>
+                        <tr><th>ISO Range</th><td>100-51200</td></tr>
+                        <tr><th>Video</th><td>4K UHD</td></tr>
+                    </table>
+                </div>
+                <div id="tab-3" class="tab-content">
+                     <p>We created this service to solve the market's profound trust deficit. Our guarantee includes:</p>
+                     <p><strong>Multi-Point Inspection:</strong> Every item is rigorously checked, cleaned, and tested before it reaches you, ensuring it is not dirty, poorly maintained, or faulty.</p>
+                     <p><strong>Functionality Promise:</strong> We guarantee flawless performance. If you face any equipment issues, our responsive support will make it right.</p>
+                </div>
+            </div>
+        </div>
+        
+        <section class="pdp-carousel-section" aria-labelledby="kit-heading">
+            <h2 id="kit-heading">Complete Your Kit</h2>
+            <div class="kit-carousel">
+                <div class="kit-card">
+                    <img src="https://via.placeholder.com/300x200/eeeeee/333333?text=Sony+50mm+Lens" alt="Sony 50mm f/1.8 Lens">
+                    <div class="kit-card-content">
+                        <h3>Sony 50mm f/1.8 Lens</h3>
+                        <p>Perfect for stunning portraits with creamy bokeh.</p>
+                        <a href="#" class="btn">Add to Kit</a>
+                    </div>
+                </div>
+                <div class="kit-card">
+                    <img src="https://via.placeholder.com/300x200/eeeeee/333333?text=Pro+Tripod" alt="Pro-Grade Tripod">
+                    <div class="kit-card-content">
+                        <h3>Pro-Grade Tripod</h3>
+                        <p>Stable shots for long exposures and video.</p>
+                        <a href="#" class="btn">Add to Kit</a>
+                    </div>
+                </div>
+                <div class="kit-card">
+                    <img src="https://via.placeholder.com/300x200/eeeeee/333333?text=Rode+Mic" alt="Rode VideoMic Pro">
+                    <div class="kit-card-content">
+                        <h3>Rode VideoMic Pro</h3>
+                        <p>Capture crystal-clear audio for your videos.</p>
+                        <a href="#" class="btn">Add to Kit</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>PassionFruit</h4>
+                <p>Own the moment, not the gear. Rent high-quality hobby equipment, hassle-free.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="index.html#catalog">All Gear</a></li>
+                    <li><a href="#">Creator Kits</a></li>
+                    <li><a href="about.html">Our Story</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact</h4>
+                <p>123 Hobby Lane,<br>Creativity City, 560001</p>
+                <p><a href="mailto:hello@passionfruit.rent">hello@passionfruit.rent</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 PassionFruit. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

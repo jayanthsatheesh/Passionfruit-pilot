@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - PassionFruit</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+</head>
+<body>
+    <nav class="nav">
+        <a href="index.html#hero" class="nav__logo">PassionFruit</a>
+        <div class="nav__links">
+            <a href="about.html" class="nav__link nav__link--bold">OUR STORY</a>
+            <a href="index.html#catalog" class="nav__link">Explore Gears</a>
+            <a href="index.html#our-promise" class="nav__link">Our Promise</a>
+            <a href="index.html#how-it-works" class="nav__link">How it Works</a>
+        </div>
+        <div class="profile">
+            <a href="#" id="profile-icon-link" class="profile__icon-link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0118 21h-2.25a8.966 8.966 0 01-5.982-2.975m11.963 0A8.966 8.966 0 0012 21a8.966 8.966 0 00-5.982-2.975M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+            </a>
+            <div id="profile-dropdown" class="profile__dropdown hidden"></div>
+        </div>
+    </nav>
+
+    <main class="contact-page">
+        <div class="contact-header">
+            <h1>Get in Touch</h1>
+            <p>We'd love to hear from you. Here's how you can reach us.</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-details card">
+                <h3>Contact Information</h3>
+                <p><strong>Address:</strong><br>123 Hobby Lane,<br>Creativity City, 560001</p>
+                <p><strong>Phone:</strong><br><a href="tel:+919876543210">+91 98765 43210</a></p>
+                <p><strong>Email:</strong><br><a href="mailto:hello@passionfruit.rent">hello@passionfruit.rent</a></p>
+            </div>
+            <div class="contact-form card">
+                <h3>Send us a Message</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html> 

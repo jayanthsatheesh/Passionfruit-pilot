@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassionFruit - Pro Gear. Guaranteed.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html#hero" class="logo">PassionFruit</a>
+        <div class="search-container">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" /></svg>
+            <input type="search" id="search-bar" placeholder="What are you passionate about today?">
+        </div>
+        <div class="nav-links">
+            <a href="about.html" class="nav-link--bold">OUR STORY</a>
+            <a href="#catalog">Explore Gears</a>
+            <a href="#our-promise">Our Promise</a>
+            <a href="#how-it-works">How it Works</a>
+        </div>
+        <div class="profile">
+            <div class="profile-link">
+                <a href="#" id="profile-icon-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0118 21h-2.25a8.966 8.966 0 01-5.982-2.975m11.963 0A8.966 8.966 0 0012 21a8.966 8.966 0 00-5.982-2.975M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                </a>
+            </div>
+            <div id="profile-dropdown" class="profile-dropdown hidden"></div>
+        </div>
+    </nav>
+
+    <main>
+        <header id="hero">
+            <div class="hero-carousel">
+                <div class="carousel-slide active">
+                    <div class="hero-content">
+                        <h1>Own the Moment, Not the Gear.</h1>
+                        <p>Try your next hobby, without the commitment.</p>
+                        <a href="#catalog" class="btn">Find Your Gear</a>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="hero-content">
+                        <h1>Pro-Checked Gear, Delivered.</h1>
+                        <p>Every piece inspected and ready for your project.</p>
+                        <a href="#catalog" class="btn">Explore the Catalog</a>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="hero-content">
+                        <h1>Your Vision, Unlocked.</h1>
+                        <p>From passion projects to professional shoots, we've got you covered.</p>
+                        <a href="#how-it-works" class="btn">See How It Works</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="prev-btn">‹</button>
+                <button class="next-btn">›</button>
+            </div>
+            <div class="carousel-indicators">
+                <button class="dot active" data-slide="0"></button>
+                <button class="dot" data-slide="1"></button>
+                <button class="dot" data-slide="2"></button>
+            </div>
+        </header>
+
+        <section class="trust-bar">
+            <div class="value-prop">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.286zm0 13.036h.008v.008h-.008v-.008z" />
+                </svg>
+                <span>Pro-Checked</span>
+            </div>
+            <div class="value-prop">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.125-.504 1.125-1.125V14.25m-17.25 4.5h10.5a1.125 1.125 0 001.125-1.125V6.75a1.125 1.125 0 00-1.125-1.125H3.375A1.125 1.125 0 002.25 6.75v10.5a1.125 1.125 0 001.125 1.125z" />
+                </svg>
+                <span>On-Time Delivery</span>
+            </div>
+            <div class="value-prop">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" />
+                </svg>
+                <span>Pocket friendly</span>
+            </div>
+        </section>
+
+        <div class="container">
+            <section id="browse-by-interest" class="guided-storefront">
+                <h2>Browse by Interest</h2>
+                <div class="visual-categories">
+                    <div class="category-card" data-interest="photography-video"><span>Photography & Video</span></div>
+                    <div class="category-card" data-interest="gaming-vr"><span>Gaming & VR</span></div>
+                    <div class="category-card" data-interest="music-audio"><span>Music & Audio</span></div>
+                    <div class="category-card" data-interest="travel-adventure"><span>Travel & Adventure</span></div>
+                </div>
+            </section>
+
+            <section id="catalog" class="full-catalog">
+                <div class="catalog-container">
+                    <aside class="filter-sidebar card">
+                        <h3>Filters</h3>
+                        <div class="filter-group">
+                            <h4>Product Category</h4>
+                            <div class="category-filter-list">
+                                <div class="category-filter-item" data-interest-area="photography-video"><label><input type="checkbox" name="category" value="digital-cameras"> Digital Cameras</label></div>
+                                <div class="category-filter-item" data-interest-area="photography-video"><label><input type="checkbox" name="category" value="drones"> Drones</label></div>
+                                <div class="category-filter-item" data-interest-area="gaming-vr"><label><input type="checkbox" name="category" value="gaming-consoles"> Gaming Consoles</label></div>
+                                <div class="category-filter-item" data-interest-area="gaming-vr"><label><input type="checkbox" name="category" value="vr-headsets"> VR Headsets</label></div>
+                                <div class="category-filter-item" data-interest-area="music-audio"><label><input type="checkbox" name="category" value="musical-instruments"> Musical Instruments</label></div>
+                                <div class="category-filter-item" data-interest-area="music-audio"><label><input type="checkbox" name="category" value="dj-gear"> DJ & Studio Gear</label></div>
+                                <div class="category-filter-item" data-interest-area="travel-adventure"><label><input type="checkbox" name="category" value="camping-equipment"> Camping Equipment</label></div>
+                                <div class="category-filter-item" data-interest-area="travel-adventure"><label><input type="checkbox" name="category" value="trekking-gear"> Trekking & Hiking Gear</label></div>
+                                <div class="category-filter-item" data-interest-area="travel-adventure"><label><input type="checkbox" name="category" value="riding-gear"> Riding Gear</label></div>
+                            </div>
+                            <button id="clear-interest-filter" class="btn" style="width:100%; margin-top:10px; display:none;">Show All Categories</button>
+                        </div>
+                        <div class="filter-group">
+                            <h4>Levels</h4>
+                            <label><input type="checkbox" name="level" value="explorer"> Explorers</label><br>
+                            <label><input type="checkbox" name="level" value="aspiring"> Aspiring Professionals</label><br>
+                            <label><input type="checkbox" name="level" value="pro"> Professionals</label>
+                        </div>
+                        <div class="filter-group" id="tech-filters">
+                            <h4>Technical Filters</h4>
+                            <div class="tech-filter-group" data-category="digital-cameras" style="display:none;">
+                                <label for="sensor-size">Sensor Size:</label>
+                                <select id="sensor-size">
+                                    <option value="">All</option>
+                                    <option value="aps-c">APS-C</option>
+                                    <option value="full-frame">Full-Frame</option>
+                                </select>
+                                <label for="video-resolution-camera">Video Resolution:</label>
+                                <select id="video-resolution-camera">
+                                    <option value="">All</option>
+                                    <option value="4k">4K</option>
+                                    <option value="6k+">6K+</option>
+                                </select>
+                            </div>
+                             <div class="tech-filter-group" data-category="drones" style="display:none;">
+                                <label for="drone-type">Drone Type:</label>
+                                <select id="drone-type">
+                                    <option value="">All</option>
+                                    <option value="camera-drone">Camera Drone</option>
+                                    <option value="fpv-drone">FPV Drone</option>
+                                </select>
+                            </div>
+                        </div>
+                    </aside>
+                    <main class="product-grid">
+                        <!-- Photography & Video -->
+                        <div class="product-card" data-category="digital-cameras" data-level="explorer" data-sensor-size="aps-c" data-video-resolution="4k"><div class="product-info"><h3>Sony ZV-1</h3></div><img src="https://www.sony.co.in/image/5d02da7ee37532a24f57c617f7d3419b?fmt=pjpeg&wid=330&bgcolor=FFFFFF&bgc=FFFFFF" alt="Sony ZV-1"><div class="product-info"><div class="product-card-footer"><p class="price">From ₹1,500/week</p><a href="item-details.html">Know more</a></div></div></div>
+                        <div class="product-card" data-category="digital-cameras" data-level="explorer" data-sensor-size="aps-c" data-video-resolution="4k"><div class="product-info"><h3>Canon PowerShot G7 X Mark III</h3></div><img src="https://in.canon/media/image/2019/07/08/g7x-mark-iii-b1.png/g7x-mark-iii-b1-720x540.png" alt="Canon PowerShot G7 X Mark III"><div class="product-info"><div class="product-card-footer"><p class="price">From ₹1,600/week</p><a href="item-details.html">Know more</a></div></div></div>
+                        <div class="product-card" data-category="digital-cameras" data-level="explorer" data-sensor-size="aps-c" data-video-resolution="4k"><div class="product-info"><h3>Panasonic Lumix G100</h3></div><img src="https://www.panasonic.com/content/dam/pim/mi/en/DC/DC-G1/DC-G100/DC-G100K-K/DC-G100K-K-Product_ImageGlobal-1_mi_en.png" alt="Panasonic Lumix G100"><div class="product-info"><div class="product-card-footer"><p class="price">From ₹1,400/week</p><a href="item-details.html">Know more</a></div></div></div>
+                        <div class="product-card" data-category="digital-cameras" data-level="aspiring" data-sensor-size="aps-c" data-video-resolution="4k"><div class="product-info"><h3>Fujifilm X-T4</h3></div><img src="https://fujifilm-x.com/wp-content/uploads/2021/09/x-t4_main_1.png" alt="Fujifilm X-T4"><div class="product-info"><div class="product-card-footer"><p class="price">From ₹2,800/week</p><a href="item-details.html">Know more</a></div></div></div>
+                        <div class="product-card" data-category="digital-cameras" data-level="aspiring" data-sensor-size="aps-c" data-video-resolution="4k"><div class="product-info"><h3>Sony a6600</h3></div><img src="https://www.sony.co.in/image/d3f757576595d28b18f058296a297746?fmt=pjpeg&wid=330&bgcolor=FFFFFF&bgc=FFFFFF" alt="Sony a6600"><div class="product-info"><div class="product-card-footer"><p class="price">From ₹2,700/week</p><a href="item-details.html">Know more</a></div></div></div>
+                        <div class="product-card" data-category="digital-cameras" data-level="aspiring" data-sensor-size="full-frame" data-video-resolution="4k"><div class="product-info"><h3>Canon EOS R7</h3></div><img src="https://in.canon/media/image/2022/05/23/eos-r7-b1.png/eos-r7-b1-720x540.png" alt="Canon EOS R7"><div class="product-info"><div class="product-card-footer"><p class="price">From ₹3,200/week</p><a href="item-details.html">Know more</a></div></div></div>
+                        <div class="product-card" data-category="digital-cameras" data-level="pro" data-sensor-size="full-frame" data-video-resolution="6k+"><div class="product-info"><h3>Sony A7S III</h3></div><img src="https://www.sony.co.in/image/8c1b9705f4588e23f663007545939023?fmt=pjpeg&wid=330&bgcolor=FFFFFF&bgc=FFFFFF" alt="Sony A7S III"><div class="product-info"><div class="product-card-footer"><p class="price">From ₹4,200/week</p><a href="item-details.html">Know more</a></div></div></div>
+                        <div class="product-card" data-category="digital-cameras" data-level="pro" data-sensor-size="full-frame" data-video-resolution="6k+"><div class="product-info"><h3>Canon EOS R5</h3></div><img src="https://in.canon/media/image/2020/07/08/eos-r5-b1.png/eos-r5-b1-720x540.png" alt="Canon EOS R5"><div class="product-info"><div class="product-card-footer"><p class="price">From ₹4,500/week</p><a href="item-details.html">Know more</a></div></div></div>
+                        <div class="product-card" data-category="digital-cameras" data-level="pro" data-sensor-size="full-frame" data-video-resolution="6k+"><div class="product-info"><h3>Nikon Z9</h3></div><img src="https://www.nikon.co.in/media/wysiwyg/Z9_24-120_Front.png" alt="Nikon Z9"><div class="product-info"><div class="product-card-footer"><p class="price">From ₹5,000/week</p><a href="item-details.html">Know more</a></div></div></div>
+                        <div class="product-card" data-category="drones" data-level="explorer" data-drone-type="camera-drone"><div class="product-info"><h3>DJI Mini 2 SE</h3></div><img src="https://dji-official-fe.djicdn.com/dps/e0b12c6a6296317b6a18d356c91a0a52.png" alt="DJI Mini 2 SE"><div class="product-info"><div class="product-card-footer"><p class="price">From ₹1,800/week</p><a href="item-details.html">Know more</a></div></div></div>
+                        <div class="product-card" data-category="drones" data-level="explorer" data-drone-type="fpv-drone"><div class="product-info"><h3>Ryze Tello</h3></div><img src="https://dji-official-fe.djicdn.com/dps/1513364f7b600949d03478d16790d565.png" alt="Ryze Tello"><div class="product-info"><div class="product-card-footer"><p class="price">From ₹1,000/week</p><a href="item-details.html">Know more</a></div></div></div>
+                        <div class="product-card" data-category="drones" data-level="explorer" data-drone-type="camera-drone"><div class="product-info"><h3>Potensic ATOM SE</h3></div><img src="https://www.potensic.com/Uploads/image/20220914/11.png" alt="Potensic ATOM SE"><div class="product-info"><div class="product-card-footer"><p class="price">From ₹1,500/week</p><a href="item-details.html">Know more</a></div></div></div>
+                        <div class="product-card" data-category="drones" data-level="aspiring" data-drone-type="camera-drone"><div class="product-info"><h3>DJI Air 2S</h3></div><img src="https://dji-official-fe.djicdn.com/dps/967d64da146c58e5786375043a2862d6.png" alt="DJI Air 2S"><div class="product-info"><div class="product-card-footer"><p class="price">From ₹3,500/week</p><a href="item-details.html">Know more</a></div></div></div>
+                        <div class="product-card" data-category="drones" data-level="aspiring" data-drone-type="camera-drone"><div class="product-info"><h3>Autel EVO Lite+</h3></div><img src="https://www.autelrobotics.com/res/img/evo-lite/p_lite_img_1_v2.png" alt="Autel EVO Lite+"><div class="product-info"><div class="product-card-footer"><p class="price">From ₹3,800/week</p><a href="item-details.html">Know more</a></div></div></div>
+                        <div class="product-card" data-category="drones" data-level="aspiring" data-drone-type="camera-drone"><div class="product-info"><h3>DJI Mavic 3 Classic</h3></div><img src="https://dji-official-fe.djicdn.com/dps/f964092b36e574c8713d509ac8f39446.png" alt="DJI Mavic 3 Classic"><div class="product-info"><div class="product-card-footer"><p class="price">From ₹4,200/week</p><a href="item-details.html">Know more</a></div></div></div>
+                        <div class="product-card" data-category="drones" data-level="pro" data-drone-type="camera-drone"><div class="product-info"><h3>DJI Mavic 3 Pro</h3></div><img src="https://dji-official-fe.djicdn.com/dps/84d262111a88b5d564f9b88339239462.png" alt="DJI Mavic 3 Pro"><div class="product-info"><div class="product-card-footer"><p class="price">From ₹5,200/week</p><a href="item-details.html">Know more</a></div></div></div>
+                        <div class="product-card" data-category="drones" data-level="pro" data-drone-type="camera-drone"><div class="product-info"><h3>DJI Inspire 3</h3></div><img src="https://dji-official-fe.djicdn.com/dps/e00a8ad67c050a41a4a4fca53907e5f3.png" alt="DJI Inspire 3"><div class="product-info"><div class="product-card-footer"><p class="price">From ₹10,000/week</p><a href="item-details.html">Know more</a></div></div></div>
+                        <div class="product-card" data-category="drones" data-level="pro" data-drone-type="camera-drone"><div class="product-info"><h3>Autel EVO II Pro</h3></div><img src="https://www.autelrobotics.com/res/img/evo-2-pro/p2_img1.png" alt="Autel EVO II Pro"><div class="product-info"><div class="product-card-footer"><p class="price">From ₹5,500/week</p><a href="item-details.html">Know more</a></div></div></div>
+                        <!-- Gaming & VR -->
+                        <div class="product-card" data-category="gaming-consoles" data-level="explorer"><div class="product-info"><h3>Nintendo Switch</h3></div><img src="https://assets.nintendo.com/image/upload/f_auto,q_auto,w_960,h_540/ncom/en_US/products/hardware/nintendo-switch-oled-model-white-set/110908-nintendo-switch-oled-model-white-set-front-screen-on-dock.png" alt="Nintendo Switch"><div class="product-info"><div class="product-card-footer"><p class="price">From ₹1,200/week</p><a href="item-details.html">Know more</a></div></div></div>
+                        <div class="product-card" data-category="gaming-consoles" data-level="explorer"><div class="product-info"><h3>Xbox Series S</h3></div><img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/image/RWUph4" alt="Xbox Series S"><div class="product-info"><div class="product-card-footer"><p class="price">From ₹1,400/week</p><a href="item-details.html">Know more</a></div></div></div>
+                        <div class="product-card" data-category="gaming-consoles" data-level="explorer"><div class="product-info"><h3>Steam Deck</h3></div><img src="https://cdn.cloudflare.steamstatic.com/steamdeck/images/steamdeck_hero.png" alt="Steam Deck"><div class="product-info"><div class="product-card-footer"><p class="price">From ₹1,800/week</p><a href="item-details.html">Know more</a></div></div></div>
+                        <div class="product-card" data-category="gaming-consoles" data-level="aspiring"><div class="product-info"><h3>PlayStation 5</h3></div><img src="https://gmedia.playstation.com/is/image/sierialto/ps5-product-thumbnail-01-en-14sep21?$native$" alt="PlayStation 5"><div class="product-info"><div class="product-card-footer"><p class="price">From ₹2,100/week</p><a href="item-details.html">Know more</a></div></div></div>
+                        <div class="product-card" data-category="gaming-consoles" data-level="aspiring"><div class="product-info"><h3>Xbox Series X</h3></div><img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/image/RE4mRni" alt="Xbox Series X"><div class="product-info"><div class="product-card-footer"><p class="price">From ₹2,100/week</p><a href="item-details.html">Know more</a></div></div></div>
+                        <div class="product-card" data-category="gaming-consoles" data-level="aspiring"><div class="product-info"><h3>PlayStation 5 Digital Edition</h3></div><img src="https://gmedia.playstation.com/is/image/sierialto/ps5-digital-edition-product-thumbnail-01-en-14sep21?$native$" alt="PlayStation 5 Digital Edition"><div class="product-info"><div class="product-card-footer"><p class="price">From ₹2,000/week</p><a href="item-details.html">Know more</a></div></div></div>
+                        <div class="product-card" data-category="gaming-consoles" data-level="pro"><div class="product-info"><h3>PlayStation 5 Pro Bundle</h3></div><img src="https://gmedia.playstation.com/is/image/sierialto/ps5-product-thumbnail-01-en-14sep21?$native$" alt="PlayStation 5 Pro Bundle"><div class="product-info"><div class="product-card-footer"><p class="price">From ₹2,800/week</p><a href="item-details.html">Know more</a></div></div></div>
+                        <div class="product-card" data-category="gaming-consoles" data-level="pro"><div class="product-info"><h3>Xbox Series X 1TB</h3></div><img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/image/RE4mRni" alt="Xbox Series X 1TB"><div class="product-info"><div class="product-card-footer"><p class="price">From ₹2,500/week</p><a href="item-details.html">Know more</a></div></div></div>
+                        <div class="product-card" data-category="gaming-consoles" data-level="pro"><div class="product-info"><h3>Alienware Aurora R15 PC</h3></div><img src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/alienware-desktops/alienware-aurora-r15/media-gallery/lunar-light/desktop-alienware-aurora-r15-gray-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=402&wid=573&qlt=100,0&resMode=sharp2&size=573,402" alt="Alienware Aurora R15 PC"><div class="product-info"><div class="product-card-footer"><p class="price">From ₹5,000/week</p><a href="item-details.html">Know more</a></div></div></div>
+                        <div class="product-card" data-category="vr-headsets" data-level="explorer"><div class="product-info"><h3>Meta Quest 2</h3></div><img src="https://images.ctfassets.net/a60q1js4n6a2/4sA5yS0h43mM3901b0s3r6/0e1e90e7568521a0740a830e060c2390/meta-quest-2.png" alt="Meta Quest 2"><div class="product-info"><div class="product-card-footer"><p class="price">From ₹1,500/week</p><a href="item-details.html">Know more</a></div></div></div>
+                        <div class="product-card" data-category="vr-headsets" data-level="explorer"><div class="product-info"><h3>Pico 4</h3></div><img src="https://www.picoxr.com/images/pico4/pico-4-1_v1.png" alt="Pico 4"><div class="product-info"><div class="product-card-footer"><p class="price">From ₹1,600/week</p><a href="item-details.html">Know more</a></div></div></div>
+                        <div class="product-card" data-category="vr-headsets" data-level="explorer"><div class="product-info"><h3>PlayStation VR</h3></div><img src="https://gmedia.playstation.com/is/image/sierialto/playstation-vr-product-thumbnail-01-en-23nov20?$native$" alt="PlayStation VR"><div class="product-info"><div class="product-card-footer"><p class="price">From ₹1,400/week</p><a href="item-details.html">Know more</a></div></div></div>
+                        <div class="product-card" data-category="vr-headsets" data-level="aspiring"><div class="product-info"><h3>Meta Quest 3</h3></div><img src="https://images.ctfassets.net/a60q1js4n6a2/6r9X21lA9l8e4j4vHVk15M/1a1cf8a6058d8e7c10b6e0c03634e062/meta-quest-3.png" alt="Meta Quest 3"><div class="product-info"><div class="product-card-footer"><p class="price">From ₹2,500/week</p><a href="item-details.html">Know more</a></div></div></div>
+                        <div class="product-card" data-category="vr-headsets" data-level="aspiring"><div class="product-info"><h3>Valve Index</h3></div><img src="https://cdn.cloudflare.steamstatic.com/valvesoftware/images/index/index_headset_z.png" alt="Valve Index"><div class="product-info"><div class="product-card-footer"><p class="price">From ₹2,800/week</p><a href="item-details.html">Know more</a></div></div></div>
+                        <div class="product-card" data-category="vr-headsets" data-level="aspiring"><div class="product-info"><h3>HP Reverb G2</h3></div><img src="https://press.hp.com/content/dam/sites/press/press-kits/2020/ces/images/reverb-g2/HP_Reverb_G2_Front_View_2_RGB.png" alt="HP Reverb G2"><div class="product-info"><div class="product-card-footer"><p class="price">From ₹2,700/week</p><a href="item-details.html">Know more</a></div></div></div>
+                        <div class="product-card" data-category="vr-headsets" data-level="pro"><div class="product-info"><h3>Varjo Aero</h3></div><img src="https://varjo.com/wp-content/uploads/2021/10/varjo-aero-front-800x600.jpg" alt="Varjo Aero"><div class="product-info"><div class="product-card-footer"><p class="price">From ₹5,500/week</p><a href="item-details.html">Know more</a></div></div></div>
+                        <div class="product-card" data-category="vr-headsets" data-level="pro"><div class="product-info"><h3>Pimax Crystal</h3></div><img src="https://pimax.com/wp-content/uploads/2022/11/Crystal_Headset_001.jpg" alt="Pimax Crystal"><div class="product-info"><div class="product-card-footer"><p class="price">From ₹7,000/week</p><a href="item-details.html">Know more</a></div></div></div>
+                        <div class="product-card" data-category="vr-headsets" data-level="pro"><div class="product-info"><h3>HTC Vive Pro 2</h3></div><img src="https://www.vive.com/media/filer_public/ad/55/ad55c141-834b-4874-9b5a-73d7637841c6/vive-pro2-headset.png" alt="HTC Vive Pro 2"><div class="product-info"><div class="product-card-footer"><p class="price">From ₹4,200/week</p><a href="item-details.html">Know more</a></div></div></div>
+                    </main>
+                </div>
+            </section>
+
+            <section id="our-promise" class="our-promise-section">
+                <h2>Our Promise</h2>
+                <div class="feature-tiles-container">
+                    <div class="feature-tile card">
+                        <h3>Pro-Checked</h3>
+                        <p>Every piece of gear undergoes a rigorous multi-point inspection to ensure it's spotless and fully functional. No surprises, just flawless performance for your project.</p>
+                    </div>
+                    <div class="feature-tile card">
+                        <h3>On-Time Delivery</h3>
+                        <p>Get your gear when you need it. We offer hyper-fast, reliable delivery and pickup across Bangalore, so you can focus on creating, not waiting.</p>
+                    </div>
+                    <div class="feature-tile card">
+                        <h3>No Hidden Fees</h3>
+                        <p>No hidden fees or confusing policies. What you see is what you pay. We believe in clear, fair pricing and hassle-free deposits.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="how-it-works" class="how-it-works-container">
+                <h2>How it Works</h2>
+                <div class="steps-timeline">
+                    <div class="step-card card">
+                        <div class="step-number">1</div>
+                        <h3>Find Your Gear</h3>
+                        <p>Browse our curated kits and pro-level gear to find the perfect fit for your project.</p>
+                    </div>
+                    <div class="step-card card">
+                        <div class="step-number">2</div>
+                        <h3>Schedule Your Drop-off</h3>
+                        <p>Pick a time and place that works for you, and we'll deliver it right to your doorstep.</p>
+                    </div>
+                    <div class="step-card card">
+                        <div class="step-number">3</div>
+                        <h3>Create & Enjoy</h3>
+                        <p>Bring your vision to life with reliable, top-quality equipment for your hobby or project.</p>
+                    </div>
+                    <div class="step-card card">
+                        <div class="step-number">4</div>
+                        <h3>We Handle Pickup</h3>
+                        <p>When your rental period is over, we'll come and pick everything up. It's that easy.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta-section card">
+                <h2>Have Questions?</h2>
+                <p>Our team is here to help you find the perfect gear for your next project.</p>
+                <button class="btn" id="talk-to-us-btn">Talk to Us</button>
+            </section>
+        </div>
+
+        <footer class="site-footer">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h4>PassionFruit</h4>
+                    <p>Own the moment, not the gear. Rent high-quality hobby equipment, hassle-free.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="index.html#catalog">All Gear</a></li>
+                        <li><a href="#">Creator Kits</a></li>
+                        <li><a href="about.html">Our Story</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <p>123 Hobby Lane,<br>Creativity City, 560001</p>
+                    <p><a href="mailto:hello@passionfruit.rent">hello@passionfruit.rent</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PassionFruit. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <!-- Lead Capture Modal -->
+        <div id="lead-modal" class="modal-overlay hidden">
+            <div class="modal-content card">
+                <button class="close-button">&times;</button>
+                <h2>Great! You are just one step away!</h2>
+                <p>Please provide your contact details and we'll get in touch with you shortly.</p>
+                <form id="lead-form">
+                    <div class="form-group">
+                        <label for="lead-name">Name</label>
+                        <input type="text" id="lead-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lead-contact">Contact No.</label>
+                        <input type="tel" id="lead-contact" name="contact" required>
+                    </div>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> 
